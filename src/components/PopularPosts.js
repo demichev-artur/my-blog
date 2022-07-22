@@ -1,9 +1,9 @@
 import React from "react";
-import {posts} from "../contants";
+import {popularPosts} from "../contants";
 
 const PopularPosts = () => {
 
-    const postsArray = posts.map(item => (
+    const popularPostsArray = popularPosts.map(item => (
         <li className="w3-padding-16">
             <img
                 src={item.src}
@@ -25,7 +25,7 @@ const PopularPosts = () => {
                     <h4>Popular Posts</h4>
                 </div>
                 <ul className="w3-ul w3-hoverable w3-white">
-                    {postsArray}
+                    {popularPostsArray}
                 </ul>
             </div>
             <hr/>

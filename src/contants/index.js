@@ -4,7 +4,7 @@ export const tags = [
     'Travel', 'New York', 'London', 'IKEA', 'NORWAY', 'DIY', 'Ideas', 'Baby', 'FamilyNews', 'Clothing', 'ShoppingSports', 'Games'
 ]
 
-export const posts = [
+export const popularPosts = [
     {
         src: "https://www.w3schools.com/w3images/workshop.jpg",
         alt: "Image",
@@ -47,7 +47,7 @@ export const posts = [
     },
 ]
 
-export const blockInfo = [
+export const posts = [
     {
         blockImgSrc: 'https://www.w3schools.com/w3images/woods.jpg',
         blockImgAlt: 'Nature',
