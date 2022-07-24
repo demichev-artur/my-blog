@@ -1,21 +1,30 @@
-import React from "react";
+import React, {useState} from "react";
 import {tags} from "../contants";
 
 const margin = {
     marginRight: '5px'
 }
 
+const Tag = props => {
+
+    const [selectTag, setSelectTag] = useState(false)
+
+    return (
+
+        <span
+            onClick={() => setSelectTag(!selectTag)}
+            className={selectTag ? "w3-tag w3-black w3-margin-bottom" : "w3-tag w3-light-grey w3-small w3-margin-bottom"}
+            style={margin}>
+            {props.name}
+        </span>
+
+    )
+}
+
 
 const Tags = () => {
 
-    const tagsArray = tags.map(
-        item => (
-            <span
-                className="w3-tag w3-light-grey w3-small w3-margin-bottom"
-                style={margin}>
-            {item}
-        </span>)
-    )
+    const tagsArray = tags.map((item, i) => <Tag name={item} tabindex={i}/>)
 
     return (
         <>
