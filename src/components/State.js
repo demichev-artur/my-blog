@@ -10,6 +10,8 @@ const State = () => {
             <button onClick={() => setText(!text)}>Click me</button>
             <p>{text ? 'Click' : 'No Click'}</p>
 
+
+
             <button onClick={() => setText1(text1+1)}>+1</button>
             <button onClick={() => setText1(text1-1)}>-1</button>
             <p>{text1}</p>
