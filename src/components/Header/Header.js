@@ -11,6 +11,8 @@ const Header = () => {
                 <li><a href="/stock">Акции</a></li>
                 <li><a href="/buyers">Покупателям</a></li>
                 <li><a href="/news">Новости</a></li>
+                <li><a href="/catalog/Iphone">Айфоны</a></li>
+                <li><a href="/catalog/MacBook">Макбуки</a></li>
             </ul>
         </div>
     )
