@@ -12,6 +12,8 @@ import NotFound from "./pages/NotFound/NotFound";
 import Catalog from "./pages/Catalog/Catalog";
 import Iphone from "./pages/Iphone/Iphone";
 import MacBook from "./pages/MacBook/MacBook";
+import Product from "./pages/Product/Product";
+
 
 function App() {
     return (
@@ -29,6 +31,7 @@ function App() {
                         <Route path="iphone" element={<Iphone/>}/>
                         <Route path="macBook" element={<MacBook/>}/>
                     </Route>
+                    <Route path="/product/:name" element={<Product/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>

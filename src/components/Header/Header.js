@@ -14,8 +14,9 @@ const Header = () => {
                 <li><NavLink className={setActive} to="/stock">Акции</NavLink></li>
                 <li><NavLink className={setActive} to="/buyers">Покупателям</NavLink></li>
                 <li><NavLink className={setActive} to="/news">Новости</NavLink></li>
-                <li><NavLink className={setActive} to="/catalog/Iphone">Айфоны</NavLink></li>
-                <li><NavLink className={setActive} to="/catalog/MacBook">Макбуки</NavLink></li>
+                <li><NavLink className={setActive} to="/catalog">Каталог</NavLink></li>
+                <li><NavLink className={setActive} to="/catalog/iphone">Айфоны</NavLink></li>
+                <li><NavLink className={setActive} to="/catalog/macBook">Макбуки</NavLink></li>
             </ul>
         </div>
     )

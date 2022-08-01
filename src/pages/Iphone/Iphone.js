@@ -1,4 +1,5 @@
 import React from 'react';
+import {useParams, Outlet} from "react-router-dom";
 
 const title = {
     textAlign: "center"
@@ -6,9 +7,9 @@ const title = {
 
 const Iphone = () => {
     return (
-        <div>
+        <Outlet>
             <h1 style={title}>Здесь будут айфоны</h1>
-        </div>
+        </Outlet>
     );
 };
 
