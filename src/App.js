@@ -31,6 +31,7 @@ function App() {
                         <Route path="iphone" element={<Iphone/>}/>
                         <Route path="macBook" element={<MacBook/>}/>
                     </Route>
+                    <Route path="/product" element={<Catalog/>}/>
                     <Route path="/product/:name" element={<Product/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>

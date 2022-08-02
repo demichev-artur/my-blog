@@ -1,20 +1,23 @@
-.header{
+.header {
     background-color: darkorange;
     padding: 40px;
     display: flex;
     justify-content: center;
 }
 
-.header ul li{
+.header ul li {
     list-style: none;
     display: inline;
     margin-right: 25px;
     font-size: 24px;
     color: white;
 }
-.header a{
+
+.header a {
     text-decoration: none;
 }
-.active{
+
+.active {
     color: blue;
 }
+

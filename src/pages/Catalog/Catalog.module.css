@@ -1,0 +1,25 @@
+.container {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.container h1{
+    width: 100%;
+}
+.container ul {
+    display: flex;
+    gap: 15px;
+}
+.container ul li{
+    font-size: 35px;
+    list-style: none;
+    padding: 0 25px;
+    border-radius: 25px;
+    background-color: #5E8BCE;
+    color: white;
+}
+
+.container ul li a{
+    text-decoration: none;
+}
