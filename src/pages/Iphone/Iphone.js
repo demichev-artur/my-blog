@@ -1,15 +1,31 @@
 import React from 'react';
-import {useParams, Outlet} from "react-router-dom";
+import {NavLink} from "react-router-dom";
+import {iPhones} from "../../constants";
+import styles from "./Iphone.module.css";
 
-const title = {
-    textAlign: "center"
-}
+const kursUSD = 82;
 
 const Iphone = () => {
+    const values = Object.values(iPhones);
+    const keys = Object.keys(iPhones);
+
+    const newArr = values.map((item, i) => (
+        <div className={styles.card}>
+            <NavLink className={styles.links} to={keys[i]}>
+                <img src={item.productImg} alt=""/>
+                <h1>{item.productName}</h1>
+            </NavLink>
+
+            <p className={styles.price}>от {item.productPrice} сом</p>
+            <p className={styles.price_usd}>${(item.productPrice - item.productPrice % kursUSD) / kursUSD}</p>
+            <button className={styles.btn}>В корзину</button>
+        </div>
+    ))
+
     return (
-        <Outlet>
-            <h1 style={title}>Здесь будут айфоны</h1>
-        </Outlet>
+        <div className={styles.container}>
+            {newArr}
+        </div>
     );
 };
 

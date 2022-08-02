@@ -1,8 +1,3 @@
-export const tags = [
-    'Travel', 'New York', 'London', 'IKEA', 'NORWAY', 'DIY', 'Ideas', 'Baby', 'FamilyNews', 'Clothing', 'ShoppingSports', 'Games'
-]
-
-
 export const iPhones = {
     "iphone-13-pro-max": {
         productName: 'iPhone 13 Pro Max',

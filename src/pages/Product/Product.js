@@ -1,5 +1,5 @@
 import React from 'react';
-import {iPhones} from '../../contants/index';
+import {iPhones} from '../../constants/index';
 import {useParams} from 'react-router-dom';
 import styles from './Product.module.css';
 

@@ -13,6 +13,8 @@ import Catalog from "./pages/Catalog/Catalog";
 import Iphone from "./pages/Iphone/Iphone";
 import MacBook from "./pages/MacBook/MacBook";
 import Product from "./pages/Product/Product";
+import ProductTwo from "./pages/ProductTwo/ProductTwo";
+import CatalogTwo from "./pages/CatalogTwo/CatalogTwo";
 
 
 function App() {
@@ -27,12 +29,14 @@ function App() {
                     <Route path="/stock" element={<Stock/>}/>
                     <Route path="/buyers" element={<Buyers/>}/>
                     <Route path="/news" element={<News/>}/>
-                    <Route path="/catalog" element={<Catalog/>}>
-                        <Route path="iphone" element={<Iphone/>}/>
-                        <Route path="macBook" element={<MacBook/>}/>
-                    </Route>
-                    <Route path="/product" element={<Catalog/>}/>
+                    <Route path="/catalog" element={<Catalog/>}/>
+                    <Route path="catalog/iphone" element={<Iphone/>}/>
+                    <Route path="catalog/macBook" element={<MacBook/>}/>
+                    <Route path="catalog/iphone/:name" element={<Product/>}/>
+                    <Route path="/product" element={<Iphone/>}/>
+                    <Route path="/productTwo" element={<CatalogTwo/>}/>
                     <Route path="/product/:name" element={<Product/>}/>
+                    <Route path="/productTwo/:id" element={<ProductTwo/>}/>
                     <Route path="*" element={<NotFound/>}/>
                 </Routes>
             </BrowserRouter>
